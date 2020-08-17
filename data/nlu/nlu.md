@@ -1,43 +1,43 @@
 ## intent:affirm
-- indeed
-- correct
-- that sounds good
-- yes
-- yess please
-- of course
-- yup
-- yeah
-- yes please
-- yes plz
-- Sure
-- Ok
-- sweet
-- cool,
-- yes...
+- اكيد  
+- صحيح
+- هذا يبدو جيدا
+- نعم
+- نعم من فضلك
+- بالطبع 
+- طبعا
+- ايوة
+- بالتاكيد
+- اكييد
+- هذا صحيح
+- اوك
+- جيد
+- صح
+
 
 ## intent:ask_transfer_charge
-- Will I be charged for transferring money
-- do transfers cost something?
-- is there a transfer charge?
-- Is there a charge
-- will i be charged for a transaction?
-- do xfers cost something?
-- is there a transfer fee
-- is there a xfer fee
-- how much is the transfer fee
+- هل سيخصم مني مصاريف التحويل ؟
+- هل سيكلفني التحويل شيئا ؟
+- هل هناك تكاليف للتحويل؟
+- هل هناك ضريبة تحويل؟
+- هل سيخصم مني للتحويل؟
+- هل سادفع شيئا؟
+- هل هناك ضريبة؟
+- هل هناك ضريبة للحوالة؟
+- كم يكلفني التحويل؟
 
 ## intent:check_balance
-- How much money is on my account?
-- what's my balance?
-- what's my current balance?
-- What's left on that account?
-- How much do I have on that account?
-- What's the balance on that account?
-- How much money is left on that account?
-- what is my account balance
-- what's my account balance?
-- what's my account balance
-- whats my account balance
+- كم يوجد من المال في حسابي ؟
+- ما هو رصيدي ؟
+- ما هو رصيدي الحالي ؟
+- ما هو الرصيد المتبقي في حسابي ؟
+- كم املك في حسابي؟
+- ما هو رصيدي في حسابي؟
+- ما المال المتبقي في حسابي؟
+- ما هو رصيدي في حسابي
+- ما هو رصيدي في حسابي؟
+- كم رصيدي في حسابي؟
+- كم رصيدي في حسابي
 - What's my [credit card](account_type) balance
 - What's my [credit](account_type) balance
 - How much money do I owe on my [credit cards](account_type)
