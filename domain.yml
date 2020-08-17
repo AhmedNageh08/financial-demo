@@ -33,7 +33,6 @@ intents:
 entities:
 - amount-of-money
 - payment_amount
-- credit_card
 - payment_date
 - vendor_name
 - time
@@ -94,118 +93,115 @@ slots:
     type: unfeaturized
 responses:
   utter_ask_transfer_form_amount_of_money:
-  - text: How much money do you want to transfer?
+  - text: كم من المال تريد ان ارسل؟
   utter_ask_transfer_form_PERSON:
-  - text: Who do you want to transfer money to?
+  - text: لمن تريد ان ارسل المال ؟
   utter_goodbye:
-  - text: Bye
+  - text: باي 
   utter_noworries:
-  - text: You're welcome :)
+  - text: ع الرحب و السعة
   utter_transfer_complete:
-  - text: Successfully transferred {currency}{amount_of_money} to {PERSON}.
+  - text: تم التحويل بنجاح {currency}{amount_of_money} الى {PERSON}.
   utter_transfer_charge:
-  - text: You are entitled to six transfers within a statement cycle before being
-      charged. For subsequent transfers you will be charged {currency}10 per transaction.
+  - text: لقد قمت ب6 عمليات بنكية بتكلفة 10 {currency} لكل عملية
   utter_ask_cc_payment_form_payment_amount:
-  - text: How much do you want to pay?
+  - text: كم تريد ان تدفع ؟
   utter_ask_cc_payment_form_credit_card:
-  - text: Towards which credit card account do you want to make a payment?
+  - text: الى اي حساب تريد ان تدفع؟
   utter_ask_cc_payment_form_time:
-  - text: For which date would you like to schedule the payment?
+  - text: الى اي تاريخ تريد ان تجدول مدفوعاتك ؟
   utter_ask_transact_search_form_vendor_name:
-  - text: For which vendor do you want to see transactions?  e.g Starbucks, Target,
-      Amazon
+  - text: مع اي مكان تريد ان ترى حوالاتك ؟ مثل تارجيت -ستاربكس 
   utter_ask_transact_search_form_time:
-  - text: In which timeframe would you like to search for transactions?
+  - text: في اي فترة زمنية تريد ان ترى عملياتك ؟
   utter_no_payment_amount:
-  - text: Sorry, I don't understand that payment amount.
+  - text: اسف .. لا افهمك ما تقصد
   utter_no_paymentdate:
-  - text: Sorry, that is not a valid payment date.
+  - text: اسف ..تاريخ غير صحيح
   utter_no_creditcard:
-  - text: Sorry, that is not a valid credit card account to make payments towards.
+  - text: اسف ..هذا ليس حساب صحيح
   utter_no_vendor_name:
-  - text: Sorry, that's not a recognized vendor.
+  - text: اسف ..جهة غير معروفة
   utter_no_transactdate:
-  - text: Sorry, that's not a recognized time frame.
+  - text: اسف ..فترة زمنية غير معروفة
   utter_cc_pay_scheduled:
-  - text: Payment of {currency}{payment_amount}{payment_amount_type} towards your
-      {credit_card} account scheduled to be paid at {time_formatted}.
+  - text: دفع {currency}{payment_amount}{payment_amount_type} الى
+      {credit_card} تم جدولتها للفترة {time_formatted}.
   utter_searching_spend_transactions:
-  - text: Searching transactions{vendor_name} between {start_time_formatted} and {end_time_formatted}...
+  - text: البحث في التحويلات{vendor_name} بين {start_time_formatted} و {end_time_formatted}...
   utter_found_spend_transactions:
-  - text: I found {numtransacts} transactions{vendor_name} totalling {currency}{total}.
+  - text: وجدت {numtransacts} حوالة {vendor_name} باجمالي {currency}{total}.
   utter_searching_deposit_transactions:
-  - text: Searching deposits made to your account between {start_time_formatted} and
+  - text: البحث في العمليات التي تمت على حسابك من  {start_time_formatted} و
       {end_time_formatted}...
   utter_found_deposit_transactions:
-  - text: I found {numtransacts} deposits made to your account totalling {currency}{total}
+  - text: وجدت {numtransacts} ايداع حدث في حساب باجمالي {currency}{total}
   utter_ask_rephrase:
-  - text: I didn't quite understand that. Can you rephrase?
+  - text: لا افهمك ..هل يمكنك اعادة الصياغة؟
   utter_ask_switch_goal:
-  - text: We haven't completed the transaction search yet. Are you sure you want to
-      switch to transfer money?
+  - text: لم تتم العملية الى الان ..هل تريد الاستمرار ؟
   utter_ask_back_to_transact:
-  - text: Would you like to go back to the transaction search now?
+  - text: هل تريد استكمال عملية البحث في عملياتك البنكية ؟
   utter_ask_back_to_transfer:
-  - text: Would you like to go back to transferring money now?
+  - text: هل تريد استكمال عملية نقل الاموال الان ؟
   utter_ok:
   - text: 👍
-  - text: ok
+  - text: اوك
   utter_ask_continue:
-  - text: Would you like to continue?
+  - text: هل تريد الاستمرار ؟
   utter_default:
-  - text: Sorry, I didn't get that. Could you rephrase?
+  - text: اسف ..لا افهمك ..هل يمكنك اعادة الصياغة ؟
   utter_ask_cc_payment_form_confirm:
   - buttons:
     - payload: /affirm
-      title: Yes
+      title: نعم
     - payload: /deny
-      title: No, cancel the transaction
-    text: Would you like to schedule a payment of {currency}{payment_amount}{payment_amount_type}
-      towards your {credit_card} account for {time_formatted}?
+      title: لا ..الغاء
+    text: هل تريد جدولة مدفوعاتك {currency}{payment_amount}{payment_amount_type}
+      الى حساب {credit_card} للفترة الزمنية {time_formatted}?
   utter_ask_transfer_form_confirm:
   - buttons:
     - payload: /affirm
-      title: Yes
+      title: نعم
     - payload: /deny
-      title: No, cancel the transaction
-    text: Would you like to transfer {currency}{amount_of_money} to {PERSON}?
+      title: لا ..الغاء
+    text: هل تريد تحويل {currency}{amount_of_money} الى {PERSON}?
   utter_transfer_cancelled:
-  - text: Transfer cancelled.
+  - text: الغاء التحويل.
   utter_cc_pay_cancelled:
-  - text: Credit card account payment cancelled.
+  - text: الغاء عملية الدفع.
   utter_account_balance:
   - text: Your balance is {currency}{init_account_balance}.
   utter_changed_account_balance:
-  - text: Your balance was {currency}{init_account_balance} and is now {currency}{account_balance}
-      after transfers and payments.
+  - text: رصيدك كان {currency}{init_account_balance} و اصبح {currency}{account_balance}
+      بعد عمليات الدفع و التحويلات .
   utter_unknown_recipient:
-  - text: Sorry, {PERSON} is not in your list of known recipients.
+  - text: اسف ..{PERSON} ليس في قائمة المتسقبلين المعروفين .
   utter_insufficient_funds:
-  - text: Sorry, you don't have enough money to do that!
+  - text: اسف ..انت لا تملك مال كافي للقيام بذلك .
   utter_credit_card_balance:
-  - text: The current balance for your {credit_card} account is {currency}{amount_of_money}.
+  - text: رصيدك الحالي لحسابك {credit_card} هو {currency}{amount_of_money}.
   utter_recipients:
-  - text: These are your known recpients to whom you can send money:{formatted_recipients}
+  - text:  هؤلاء هم قائمة المستقبلين المعروفين :{formatted_recipients}
   utter_greet:
-  - text: Hi! I'm your Financial Assistant!
+  - text: هاي ! انا مساعدك المالي 
   utter_ask_handoff:
-  - text: It looks like you want to be transferred to a human agent.
+  - text: يبدو انك تحتاج للتحدث مع شخص .
   utter_handoff:
-  - text: Alright, I'll try to transfer you.
+  - text: تمام ..ساحاول ان ارسلك لعميل
   utter_wouldve_handed_off:
-  - text: If you were talking to me via chatroom, I would have handed you off to {handoffhost}. 
+  - text: لقد قمت بتحويلك الى {handoffhost}. 
   utter_no_handoff:
-  - text: Since you haven't configured a host to hand off to, I can't send you anywhere!
+  - text: لانك لم تحدد الى من سيتم تحويلك لذا لا يمكنني ارسالك الى اي مكان
   utter_ask_whatelse:
-  - text: What else can I help you with?
+  - text: ماذا يمكنك ان اساعدك به ايضا ؟
   utter_help:
-    - text: "I can help you with your financial accounts.
-        \nYou can ask me things like:
-        \n- What's my account balance?
-        \n- Pay off my credit card
-        \n- What did I spend at Target last month?
-        \n- I need to transfer money"
+    - text: "يمكنني ان اساعدك في عملياتك البنكية
+        \n يمكننك ان تسأل اسئلة مثل :
+        \n- ما هو رصيدي ؟
+        \n- ادفعلي
+        \n- ماذا انفقت في تارجت الشهر الماضي ؟
+        \n- اريد ان ارسل المال"
 actions:
 - action_account_balance
 - action_session_start
