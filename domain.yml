@@ -32,6 +32,7 @@ intents:
 
 entities:
 - amount-of-money
+-credit_card
 - payment_amount
 - payment_date
 - vendor_name
