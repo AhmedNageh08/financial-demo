@@ -166,8 +166,7 @@
 - اريد ان ادفع [الفاتورة](payment_amount)
 - اريد ان ادفع
 - ادفعلي
--ادفع من حسابي [gold](credit_card) لصديقي
--دفعلي الفاتورة من [silver](credit_card)
+
 
 ## intent:search_transactions
 - كم دفعت الاسبوع الماضي في [تارجيت](vendor_name) ؟
