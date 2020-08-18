@@ -40,6 +40,9 @@
 - كم رصيدي في حسابي
 - ما هو الرصيد في [فيزا]（account_type）؟
 - ما هو الرصيد في [فيزا](account_type)
+- ما هو رصيدي في حسابي[silver](credit_card)
+- ما هو رصيدي في حسابي[golden](credit_card)
+- ما هو رصيدي في حسابي[platinum](credit_card)
 - كم املك من المال في [بطاقة الفيزا](account_type) ?
 - اعرض لي رصيدي في [بطاقة الائتمان](account_type) الخاصة بي
 - ماذا املك في [بطاقة الدفع](account_type) التي املكها
@@ -143,7 +146,9 @@
 - صديقي
 - احمد ؟
 - اليوم من فضلك
-
+- [platinum](credit_card)
+- [gold](credit_card)
+- [silver](credit_card)
 
 ## intent:pay_cc
 - اود ان ادفع [حسابي](payment_amount) من [فيزا](account_type) 
@@ -161,6 +166,8 @@
 - اريد ان ادفع [الفاتورة](payment_amount)
 - اريد ان ادفع
 - ادفعلي
+-ادفع من حسابي [gold](credit_card) لصديقي
+-دفعلي الفاتورة من [silver](credit_card)
 
 ## intent:search_transactions
 - كم دفعت الاسبوع الماضي في [تارجيت](vendor_name) ؟
