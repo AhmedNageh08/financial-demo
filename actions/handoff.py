@@ -36,8 +36,8 @@ class ActionHandoffOptions(Action):
                 for bot, config in handoff_config.items()
             ]
             dispatcher.utter_message(
-                text="I can't transfer you to a human, \
-                     but I can transfer you to one of these bots",
+                text="لا استطيع تحويلك لشخص, \
+                     لكن استطيع تحويلك لروبوت ",
                 buttons=buttons,
             )
         return []
