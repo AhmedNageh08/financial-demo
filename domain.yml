@@ -172,7 +172,7 @@ responses:
   utter_cc_pay_cancelled:
   - text: الغاء عملية الدفع.
   utter_account_balance:
-  - text: Your balance is {currency}{init_account_balance}.
+  - text: رصيدك هو {currency}{init_account_balance}.
   utter_changed_account_balance:
   - text: رصيدك كان {currency}{init_account_balance} و اصبح {currency}{account_balance}
       بعد عمليات الدفع و التحويلات .
